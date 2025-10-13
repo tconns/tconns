@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template - Simple Professional Style</title>
+    <title>CV - Nguyễn Sỹ Thành Công | Senior Frontend Engineer | SmartTV Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Nguyễn Sỹ Thành Công - Senior Frontend Engineer với 8+ năm kinh nghiệm phát triển SmartTV platform. Chuyên gia về video streaming, DRM integration, và performance optimization. Demo: OsirisTV Platform.">
+    <meta name="keywords" content="Nguyễn Sỹ Thành Công, Senior Frontend Engineer, SmartTV Developer, Video Streaming, HLS.js, Shaka Player, ExoPlayer, DRM, Widevine, PlayReady, ReactJS, TypeScript, JavaScript, OsirisTV">
+    <meta name="author" content="Nguyễn Sỹ Thành Công">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Vietnamese, English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CV - Nguyễn Sỹ Thành Công | Senior Frontend Engineer">
+    <meta property="og:description" content="Senior Frontend Engineer với 8+ năm kinh nghiệm SmartTV platform development. Chuyên gia video streaming và performance optimization.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://osiristv.com/">
+    <meta property="og:site_name" content="Nguyễn Sỹ Thành Công - CV">
+    <meta property="og:locale" content="vi_VN">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CV - Nguyễn Sỹ Thành Công | Senior Frontend Engineer">
+    <meta name="twitter:description" content="Senior Frontend Engineer với 8+ năm kinh nghiệm SmartTV platform development.">
+    
+    <!-- Professional Meta Tags -->
+    <meta name="profession" content="Senior Frontend Engineer">
+    <meta name="experience" content="8+ years">
+    <meta name="specialization" content="SmartTV Platform Development, Video Streaming, DRM Integration">
+    <meta name="location" content="Nghệ An, Việt Nam">
+    <meta name="email" content="thanhcongns94@gmail.com">
+    <meta name="phone" content="+84388416901">
+    <meta name="github" content="https://github.com/tconns">
+    <meta name="linkedin" content="https://www.linkedin.com/in/cong-nguyen-b06519297/">
+    
+    <!-- Technical Meta Tags -->
+    <meta name="technologies" content="JavaScript, TypeScript, ReactJS, HLS.js, Shaka Player, ExoPlayer, Widevine DRM, PlayReady DRM, SmartTV SDK">
+    <meta name="projects" content="OsirisTV Platform, STVPlay OTT, VTVcabON OTT, TrueID TV, VTVgo">
+    <meta name="education" content="Hanoi University of Science and Technology, Computer Science">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://osiristv.com/cv">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
@@ -297,8 +338,7 @@
             gap: 10px;
         }
 
-        .print-button,
-        .pdf-button {
+        .print-button, .pdf-button {
             background: #333;
             color: white;
             border: none;
@@ -327,42 +367,36 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0,0,0,0.9);
             color: white;
-            padding: 20px;
-            border-radius: 5px;
+            padding: 30px;
+            border-radius: 10px;
             z-index: 2000;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            min-width: 200px;
         }
 
         .spinner {
-            border: 2px solid #f3f3f3;
-            border-top: 2px solid #333;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #ffffff;
             border-radius: 50%;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
             animation: spin 1s linear infinite;
-            margin: 0 auto 10px;
+            margin: 0 auto 15px;
         }
 
         @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
         @media print {
-
-            .print-button,
-            .pdf-button,
-            .button-group,
-            .loading {
+            .print-button, .pdf-button, .button-group, .loading {
                 display: none !important;
             }
-
+            
             body {
                 background: white !important;
                 font-size: 12px !important;
@@ -373,7 +407,7 @@
                 print-color-adjust: exact !important;
                 color-adjust: exact !important;
             }
-
+            
             .container {
                 box-shadow: none !important;
                 margin: 0 !important;
@@ -384,153 +418,153 @@
                 height: auto !important;
                 overflow: visible !important;
             }
-
+            
             .section-header {
                 page-break-after: avoid;
                 margin-top: 15px !important;
                 break-after: avoid;
             }
-
+            
             .work-item {
                 page-break-inside: auto;
                 break-inside: auto;
                 margin-bottom: 12px !important;
             }
-
+            
             .project-item {
                 page-break-inside: auto;
                 break-inside: auto;
                 margin-bottom: 10px !important;
             }
-
+            
             .subsection {
                 page-break-inside: auto;
                 break-inside: auto;
             }
-
+            
             .skills-grid {
                 display: block !important;
             }
-
+            
             .skill-category {
                 margin-bottom: 8px !important;
                 page-break-inside: auto;
                 break-inside: auto;
             }
-
+            
             .skill-tags {
                 display: block !important;
             }
-
+            
             .skill-tag {
                 display: inline-block !important;
                 margin: 1px 3px 1px 0 !important;
             }
-
+            
             .tech-list li {
                 display: inline !important;
             }
-
+            
             .tech-list li:not(:last-child)::after {
                 content: ", " !important;
             }
-
+            
             /* Link styles for print - remove clickable links */
             a {
                 color: #000 !important;
                 text-decoration: none !important;
                 pointer-events: none !important;
             }
-
+            
             a[href]:after {
                 content: "" !important;
             }
-
+            
             a[href^="mailto:"]:after {
                 content: "" !important;
             }
-
+            
             /* Section headers underline spacing for print */
             .section-header {
                 text-underline-offset: 2px !important;
                 text-decoration-thickness: 1px !important;
             }
-
+            
             /* Đảm bảo nội dung dài được chia trang */
             .bullet-list {
                 page-break-inside: auto;
                 break-inside: auto;
             }
-
+            
             .bullet-list li {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             /* Tránh cắt text khi chuyển trang */
             .work-item {
                 page-break-inside: avoid;
                 break-inside: avoid;
                 margin-bottom: 15px !important;
             }
-
+            
             .project-item {
                 page-break-inside: avoid;
                 break-inside: avoid;
                 margin-bottom: 12px !important;
             }
-
+            
             .subsection {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             .skill-category {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             .education-item {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             .language-item {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             /* Tránh cắt text giữa dòng */
             .project-detail {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             .project-details {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             .project-description {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             .tech-list {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             .company-header {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             .role {
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
-
+            
             /* Đảm bảo section headers không bị cắt */
             .section-header {
                 page-break-after: avoid;
@@ -538,28 +572,26 @@
                 margin-top: 20px !important;
                 margin-bottom: 10px !important;
             }
-
+            
             /* Tránh cắt project headers */
             .project-header {
                 page-break-after: avoid;
                 break-after: avoid;
             }
-
+            
             /* Tránh cắt text trong các dòng dài */
-            p,
-            div,
-            span {
+            p, div, span {
                 orphans: 3;
                 widows: 3;
             }
-
+            
             /* Đảm bảo không cắt giữa từ */
             * {
                 word-wrap: break-word;
                 overflow-wrap: break-word;
                 hyphens: auto;
             }
-
+            
             /* Tránh cắt text mạnh hơn */
             .project-detail,
             .project-details,
@@ -576,7 +608,7 @@
                 orphans: 3 !important;
                 widows: 3 !important;
             }
-
+            
             /* Tránh cắt các dòng text */
             .project-detail span,
             .project-details span,
@@ -584,25 +616,25 @@
                 page-break-inside: avoid !important;
                 break-inside: avoid !important;
             }
-
+            
             /* Đảm bảo không cắt giữa project item */
             .project-item .project-details {
                 page-break-inside: avoid !important;
                 break-inside: avoid !important;
             }
-
+            
             /* Tránh cắt tech stack */
             .tech-list li {
                 page-break-inside: avoid !important;
                 break-inside: avoid !important;
             }
-
+            
             /* Tránh cắt text mạnh nhất - áp dụng cho tất cả */
             * {
                 page-break-inside: avoid !important;
                 break-inside: avoid !important;
             }
-
+            
             /* Cho phép cắt một số elements cần thiết */
             .container,
             .work-item,
@@ -614,7 +646,7 @@
                 page-break-inside: auto !important;
                 break-inside: auto !important;
             }
-
+            
             /* Nhưng vẫn bảo vệ text bên trong */
             .container *,
             .work-item *,
@@ -626,7 +658,7 @@
                 page-break-inside: avoid !important;
                 break-inside: avoid !important;
             }
-
+            
             /* Đặc biệt bảo vệ các dòng text */
             .project-detail,
             .project-details,
@@ -652,7 +684,7 @@
                 margin: 10px;
                 padding: 20px;
             }
-
+            
             .button-group {
                 position: relative;
                 top: auto;
@@ -663,31 +695,26 @@
         }
     </style>
 </head>
-
 <body>
     <div class="button-group">
         <button class="pdf-button" onclick="exportToPDF()">📄 Xuất PDF</button>
         <button class="print-button" onclick="window.print()">🖨️ In CV</button>
     </div>
-
+    
     <div class="loading" id="loading">
         <div class="spinner"></div>
         <div>Đang tạo PDF...</div>
     </div>
-
+    
     <div class="container">
         <!-- Header -->
         <header class="header">
             <div class="name">NGUYỄN SỸ THÀNH CÔNG</div>
             <div class="title">SENIOR FRONTEND ENGINEER</div>
             <div class="contact-info">
-                <div class="contact-line">+84388416901 - <a
-                        href="mailto:thanhcongns94@gmail.com">thanhcongns94@gmail.com</a> - Nghệ An, Việt Nam</div>
+                <div class="contact-line">+84388416901 - <a href="mailto:thanhcongns94@gmail.com">thanhcongns94@gmail.com</a> - Nghệ An, Việt Nam</div>
                 <div class="contact-line">Năm sinh: 1994</div>
-                <div class="contact-line"><a href="https://github.com/tconns"
-                        target="_blank">https://github.com/tconns</a> - <a
-                        href="https://www.linkedin.com/in/cong-nguyen-b06519297/"
-                        target="_blank">https://www.linkedin.com/in/cong-nguyen-b06519297/</a></div>
+                <div class="contact-line"><a href="https://github.com/tconns" target="_blank">https://github.com/tconns</a> - <a href="https://www.linkedin.com/in/cong-nguyen-b06519297/" target="_blank">https://www.linkedin.com/in/cong-nguyen-b06519297/</a></div>
             </div>
         </header>
 
@@ -697,8 +724,7 @@
             <ul class="summary-list">
                 <li>8+ years of specialized experience in SmartTV platform development and optimization</li>
                 <li>Expert in SmartTV core architecture, packaging systems, and update roadmap management</li>
-                <li>Deep expertise in video player development using HLS.js, Shaka Player, and ExoPlayer technologies
-                </li>
+                <li>Deep expertise in video player development using HLS.js, Shaka Player, and ExoPlayer technologies</li>
                 <li>Proficient in JavaScript, TypeScript, ReactJS, and SmartTV SDK technologies</li>
                 <li>Strong research and development capabilities in cutting-edge SmartTV technologies</li>
             </ul>
@@ -707,28 +733,24 @@
         <!-- Work Experience -->
         <section>
             <div class="section-header">Work Experience</div>
-
+            
             <div class="work-item">
                 <div class="company-header">
                     <span class="company-name">Thủ Đô Multimedia</span> | <span class="dates">11/2016 - Present</span>
                 </div>
                 <div class="role">Senior Frontend Engineer</div>
-
+                
                 <div class="subsection">
                     <div class="subsection-title">Key Responsibilities:</div>
                     <ul class="bullet-list">
-                        <li>Lead SmartTV platform development with high-performance code base optimized for low-end TV
-                            models</li>
-                        <li>Develop video players (HLS.js, Shaka Player, ExoPlayer) and DRM integration (Widevine,
-                            PlayReady, SigmaDRM)</li>
-                        <li>Integrate Google IMA SDK and develop proprietary VAST processing library for ad monetization
-                        </li>
-                        <li>Achieve superior performance compared to top Vietnamese platforms (FPTPlay, TV360, ClipTV,
-                            VieON)</li>
+                        <li>Lead SmartTV platform development with high-performance code base optimized for low-end TV models</li>
+                        <li>Develop video players (HLS.js, Shaka Player, ExoPlayer) and DRM integration (Widevine, PlayReady, SigmaDRM)</li>
+                        <li>Integrate Google IMA SDK and develop proprietary VAST processing library for ad monetization</li>
+                        <li>Achieve superior performance compared to top Vietnamese platforms (FPTPlay, TV360, ClipTV, VieON)</li>
                         <li>Mentor team and lead performance optimization initiatives</li>
                     </ul>
                 </div>
-
+                
                 <div class="subsection">
                     <div class="subsection-title">Technologies:</div>
                     <ul class="tech-list">
@@ -746,7 +768,7 @@
                         <li>SmartTV SDK</li>
                     </ul>
                 </div>
-
+                
                 <div class="project-item">
                     <div class="project-header">Career Progression:</div>
                     <div class="project-details">
@@ -781,7 +803,7 @@
                         <span class="skill-tag">CSS3</span>
                     </div>
                 </div>
-
+                
                 <div class="skill-category">
                     <div class="skill-category-title">Video Player Technologies:</div>
                     <div class="skill-tags">
@@ -791,7 +813,7 @@
                         <span class="skill-tag">Adaptive Streaming</span>
                     </div>
                 </div>
-
+                
                 <div class="skill-category">
                     <div class="skill-category-title">SmartTV Technologies:</div>
                     <div class="skill-tags">
@@ -804,7 +826,7 @@
                         <span class="skill-tag">Platform Integration</span>
                     </div>
                 </div>
-
+                
                 <div class="skill-category">
                     <div class="skill-category-title">Frontend Frameworks:</div>
                     <div class="skill-tags">
@@ -813,7 +835,7 @@
                         <span class="skill-tag">SmartTV UI</span>
                     </div>
                 </div>
-
+                
                 <div class="skill-category">
                     <div class="skill-category-title">Ads & Monetization:</div>
                     <div class="skill-tags">
@@ -822,7 +844,7 @@
                         <span class="skill-tag">Ad Library Development</span>
                     </div>
                 </div>
-
+                
                 <div class="skill-category">
                     <div class="skill-category-title">DRM & Content Protection:</div>
                     <div class="skill-tags">
@@ -832,7 +854,7 @@
                         <span class="skill-tag">Content Security</span>
                     </div>
                 </div>
-
+                
                 <div class="skill-category">
                     <div class="skill-category-title">Performance & Optimization:</div>
                     <div class="skill-tags">
@@ -854,18 +876,17 @@
                     <span class="company-name">OsirisTV Platform</span> | <span class="dates">2020 - Present</span>
                 </div>
                 <div class="role">Technical Lead & Developer</div>
-
+                
                 <div class="subsection">
                     <div class="subsection-title">Description:</div>
                     <ul class="bullet-list">
-                        <li>Developed comprehensive SmartTV platform showcasing advanced video streaming technologies
-                        </li>
+                        <li>Developed comprehensive SmartTV platform showcasing advanced video streaming technologies</li>
                         <li>Built adaptive streaming solutions using HLS.js, Shaka Player, and ExoPlayer</li>
                         <li>Integrated Google IMA SDK and custom VAST processing for advanced ad monetization</li>
                         <li>Created cross-platform compatibility for AndroidTV and SmartTV ecosystems</li>
                     </ul>
                 </div>
-
+                
                 <div class="subsection">
                     <div class="subsection-title">Technologies:</div>
                     <ul class="tech-list">
@@ -879,26 +900,22 @@
                         <li>VAST Processing</li>
                     </ul>
                 </div>
-
+                
                 <div class="project-item">
-                    <div class="project-header">OsirisTV Platform - Demo Product - <a href="https://osiristv.com/"
-                            target="_blank">https://osiristv.com/</a></div>
+                    <div class="project-header">OsirisTV Platform - Demo Product - <a href="https://osiristv.com/" target="_blank">https://osiristv.com/</a></div>
                     <div class="project-details">
                         <div class="project-detail">
                             <span class="project-detail-label">Time:</span> 2020 - Present
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Description:</span> High-performance SmartTV platform
-                            with superior performance compared to top Vietnamese platforms (FPTPlay, TV360, ClipTV,
-                            VieON). Optimized for low-end TV models with multi-DRM support and adaptive streaming.
+                            <span class="project-detail-label">Description:</span> High-performance SmartTV platform with superior performance compared to top Vietnamese platforms (FPTPlay, TV360, ClipTV, VieON). Optimized for low-end TV models with multi-DRM support and adaptive streaming.
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Tech stack:</span> ReactJS, HLS.js, Shaka Player,
-                            ExoPlayer, Widevine DRM, PlayReady DRM, Google IMA SDK
+                            <span class="project-detail-label">Tech stack:</span> ReactJS, HLS.js, Shaka Player, ExoPlayer, Widevine DRM, PlayReady DRM, Google IMA SDK
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="project-item">
                     <div class="project-header">STVPlay OTT Platform</div>
                     <div class="project-details">
@@ -906,16 +923,14 @@
                             <span class="project-detail-label">Time:</span> T3/2017 - T9/2018
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Description:</span> OTT television platform for SmartTV
-                            Tizen, WebOS and Mobile Android/iOS React Native.
+                            <span class="project-detail-label">Description:</span> OTT television platform for SmartTV Tizen, WebOS and Mobile Android/iOS React Native.
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Tech stack:</span> React Native, SmartTV SDK, Tizen,
-                            WebOS
+                            <span class="project-detail-label">Tech stack:</span> React Native, SmartTV SDK, Tizen, WebOS
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="project-item">
                     <div class="project-header">VTVcabON OTT Platform</div>
                     <div class="project-details">
@@ -923,16 +938,14 @@
                             <span class="project-detail-label">Time:</span> T10/2018 - Present
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Description:</span> OTT platform for SmartTV and mobile
-                            platforms with comprehensive streaming solutions.
+                            <span class="project-detail-label">Description:</span> OTT platform for SmartTV and mobile platforms with comprehensive streaming solutions.
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Tech stack:</span> ReactJS, React Native, SmartTV SDK,
-                            Multi-platform
+                            <span class="project-detail-label">Tech stack:</span> ReactJS, React Native, SmartTV SDK, Multi-platform
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="project-item">
                     <div class="project-header">TrueID TV - Thailand</div>
                     <div class="project-details">
@@ -940,16 +953,14 @@
                             <span class="project-detail-label">Time:</span> T8/2021 - T6/2022
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Description:</span> SmartTV platform development for
-                            Thailand market with localized features and content delivery.
+                            <span class="project-detail-label">Description:</span> SmartTV platform development for Thailand market with localized features and content delivery.
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Tech stack:</span> SmartTV SDK, Localization, Content
-                            Management
+                            <span class="project-detail-label">Tech stack:</span> SmartTV SDK, Localization, Content Management
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="project-item">
                     <div class="project-header">VTVgo - National Television</div>
                     <div class="project-details">
@@ -957,16 +968,14 @@
                             <span class="project-detail-label">Time:</span> T10/2024 - Present
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Description:</span> OTT platform for Vietnam National
-                            Television on SmartTV platform with advanced streaming capabilities.
+                            <span class="project-detail-label">Description:</span> OTT platform for Vietnam National Television on SmartTV platform with advanced streaming capabilities.
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Tech stack:</span> SmartTV SDK, National Broadcasting
-                            Standards, Advanced Streaming
+                            <span class="project-detail-label">Tech stack:</span> SmartTV SDK, National Broadcasting Standards, Advanced Streaming
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="project-item">
                     <div class="project-header">India Market Projects</div>
                     <div class="project-details" style="margin-bottom: 12px;"></div>
@@ -975,12 +984,10 @@
                             <span class="project-detail-label">Time:</span> Various
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Description:</span> Multiple SmartTV platform projects
-                            for India market with regional customization and content delivery optimization.
+                            <span class="project-detail-label">Description:</span> Multiple SmartTV platform projects for India market with regional customization and content delivery optimization.
                         </div>
                         <div class="project-detail">
-                            <span class="project-detail-label">Tech stack:</span> SmartTV SDK, Regional Adaptation,
-                            Performance Optimization
+                            <span class="project-detail-label">Tech stack:</span> SmartTV SDK, Regional Adaptation, Performance Optimization
                         </div>
                     </div>
                 </div>
@@ -991,11 +998,10 @@
 
             <div class="work-item">
                 <div class="company-header">
-                    <span class="company-name">Cross-platform Mobile Apps</span> | <span class="dates">2018 -
-                        Present</span>
+                    <span class="company-name">Cross-platform Mobile Apps</span> | <span class="dates">2018 - Present</span>
                 </div>
                 <div class="role">Mobile App Developer</div>
-
+                
                 <div class="subsection">
                     <div class="subsection-title">Description:</div>
                     <ul class="bullet-list">
@@ -1005,7 +1011,7 @@
                         <li>Integrated third-party APIs and services for enhanced functionality</li>
                     </ul>
                 </div>
-
+                
                 <div class="subsection" style="margin-top: 16px;">
                     <div class="subsection-title">Technologies:</div>
                     <ul class="tech-list">
@@ -1049,12 +1055,12 @@
             const phone = urlParams.get('phone');
             const email = urlParams.get('email');
             const visibleNSTC = urlParams.get('visible_nstc');
-
+            
             const phoneElement = document.querySelector('.contact-line');
             if (phoneElement) {
                 let phoneDisplay = '+8438***';
                 let emailDisplay = 'thanhcongns94@gmail.com';
-
+                
                 // Hiển thị số điện thoại nếu có parameter phone hoặc visible_nstc=1
                 if (phone) {
                     // Tự động thêm dấu + nếu chưa có
@@ -1062,7 +1068,7 @@
                 } else if (visibleNSTC === '1') {
                     phoneDisplay = '+84388416901';
                 }
-
+                
                 // Hiển thị email nếu có parameter email hoặc visible_nstc=1
                 if (email) {
                     emailDisplay = email;
@@ -1072,26 +1078,26 @@
                     // Ẩn email mặc định
                     emailDisplay = 'thanhcongns94@***';
                 }
-
+                
                 phoneElement.innerHTML = `${phoneDisplay} - <a href="mailto:${emailDisplay}">${emailDisplay}</a> - Nghệ An, Việt Nam`;
             }
         }
-
+        
         // Gọi hàm khi trang load
         document.addEventListener('DOMContentLoaded', checkContactVisibility);
-
+        
         // Hàm xuất PDF với phân trang
         async function exportToPDF() {
             const loading = document.getElementById('loading');
             const container = document.querySelector('.container');
-
+            
             try {
                 loading.style.display = 'block';
-
+                
                 // Ẩn các nút trước khi capture
                 const buttons = document.querySelectorAll('.button-group, .loading');
                 buttons.forEach(btn => btn.style.display = 'none');
-
+                
                 const canvas = await html2canvas(container, {
                     scale: 2.0,
                     useCORS: true,
@@ -1108,66 +1114,66 @@
 
                 const { jsPDF } = window.jspdf;
                 const pdf = new jsPDF('p', 'mm', 'a4');
-
+                
                 const pageWidth = 210;
                 const pageHeight = 297;
                 const margin = 12;
                 const contentWidth = pageWidth - (margin * 2);
                 const contentHeight = pageHeight - (margin * 2);
-
+                
                 const imgWidth = contentWidth;
                 const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-                const imgData = canvas.toDataURL('image/png', 1.0);
-
+                
+                const imgData = canvas.toDataURL('image/jpeg', 0.95);
+                
                 // Nếu CV vừa trong 1 trang
                 if (imgHeight <= contentHeight) {
-                    pdf.addImage(imgData, 'PNG', margin, margin, imgWidth, imgHeight);
+                    pdf.addImage(imgData, 'JPEG', margin, margin, imgWidth, imgHeight);
                 } else {
                     // Chia thành nhiều trang
                     let yPosition = 0;
                     let pageNumber = 1;
-
+                    
                     while (yPosition < imgHeight) {
                         if (pageNumber > 1) {
                             pdf.addPage();
                         }
-
+                        
                         // Tính toán vị trí cắt
                         const sourceY = (yPosition / imgHeight) * canvas.height;
                         const sourceHeight = Math.min(
                             (contentHeight / imgHeight) * canvas.height,
                             canvas.height - sourceY
                         );
-
+                        
                         // Tạo canvas tạm cho trang hiện tại
                         const tempCanvas = document.createElement('canvas');
                         const tempCtx = tempCanvas.getContext('2d');
                         tempCanvas.width = canvas.width;
                         tempCanvas.height = sourceHeight;
-
+                        
                         // Vẽ phần cần thiết lên canvas tạm
                         tempCtx.drawImage(
                             canvas,
                             0, sourceY, canvas.width, sourceHeight,
                             0, 0, canvas.width, sourceHeight
                         );
-
+                        
                         // Chuyển đổi thành image
-                        const pageImgData = tempCanvas.toDataURL('image/png', 1.0);
+                        const pageImgData = tempCanvas.toDataURL('image/jpeg', 0.95);
                         const pageImgHeight = (sourceHeight * imgWidth) / canvas.width;
-
+                        
                         // Thêm vào PDF
-                        pdf.addImage(pageImgData, 'PNG', margin, margin, imgWidth, pageImgHeight);
-
+                        pdf.addImage(pageImgData, 'JPEG', margin, margin, imgWidth, pageImgHeight);
+                        
                         yPosition += contentHeight;
                         pageNumber++;
                     }
                 }
-
+                
                 const fileName = 'CV_Nguyen_Sy_Thanh_Cong_' + new Date().toISOString().slice(0, 10) + '.pdf';
                 pdf.save(fileName);
-
+                
             } catch (error) {
                 console.error('Lỗi khi tạo PDF:', error);
                 alert('Có lỗi xảy ra khi tạo PDF. Vui lòng thử lại!');
@@ -1180,5 +1186,4 @@
         }
     </script>
 </body>
-
 </html>
